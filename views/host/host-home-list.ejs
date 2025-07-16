@@ -30,9 +30,10 @@
             </div>
 
             <div class="flex gap-2">
-              <a href="/host/edit-home/<%= home._id %>" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+              <a href="/host/edit-home/<%= home._id %>?editing=true" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
                 Edit
               </a>
+             
               <form action="/host/delete-home/<%= home._id %>" method="POST">
                 <button type="submit" class="bg-rose-500 text-white px-4 py-2 rounded hover:bg-rose-600 transition">
                   Delete

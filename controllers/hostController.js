@@ -13,6 +13,7 @@ exports.getAddHome = (req, res, next) => {
 exports.getEditHome = (req, res, next) => {
   const homeId = req.params.homeId;
   const editing = req.query.editing === "true";
+  
 
   Home.findById(homeId).then((home) => {
     if (!home) {
