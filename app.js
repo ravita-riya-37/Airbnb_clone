@@ -103,7 +103,7 @@ mongoose.connect(DB_PATH)
   .then(() => {
     console.log('✅ Connected to Mongo');
     app.listen(PORT, () => {
-      console.log(`🚀 Server running at http://localhost:${PORT}`);
+      console.log(`🚀 Server running at https://airbnb-clone-website-1.onrender.com`);
     });
   })
   .catch(err => {
